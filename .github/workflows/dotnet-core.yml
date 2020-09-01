@@ -26,3 +26,5 @@ jobs:
       run: dotnet build --configuration Release --no-restore -p:Version=${{ github.run_number }}
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Publish
+      run: dotnet publish /p:PublishProfile=FolderProfile 
