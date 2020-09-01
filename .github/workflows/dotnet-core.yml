@@ -2,7 +2,7 @@ name: .NET Core 2
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, mk1 ]
 
 jobs:
   build:
