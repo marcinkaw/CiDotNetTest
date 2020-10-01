@@ -25,7 +25,12 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore -p:Version=${{ github.run_number }}
     - name: Test
-      run: dotnet test --no-restore --verbosity minimal
+      run: dotnet test --no-restore --verbosity minimal --collect "Code Coverage"
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report
+        path: CiDotNet.Calc.Test\TestResults\**\*.coverage
     - name: Publish
       run: dotnet publish /p:PublishProfile=FolderProfile 
     - name: Create Release
