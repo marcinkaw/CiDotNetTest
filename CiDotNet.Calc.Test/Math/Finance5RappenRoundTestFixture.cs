@@ -9,7 +9,7 @@ namespace CiDotNet.Calc.Test.Math
         public void CalculateRate5RappenRound()
         {
             int Duration = 12;
-            int Ppy = 12;
+            int Ppy = 13;
             double PeriodicInterestRate = 7.5;
             double presentValue = 30000;
             double finalValue = 0;
