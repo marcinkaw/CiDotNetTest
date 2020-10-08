@@ -1,9 +1,10 @@
-name: .NET Core 2
+name: Not master build
 
 on:
   push:
     branches:
      - '**'
+     - '!master'
       
 jobs:
   build:
