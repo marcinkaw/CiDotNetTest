@@ -1,5 +1,4 @@
-name: Self hosted build
-
+name: Self hosted build 2
 on:
   push:
     branches:
