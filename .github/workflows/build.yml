@@ -1,4 +1,4 @@
-name: Not master build
+name: Self hosted build
 
 on:
   push:
