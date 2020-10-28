@@ -1,5 +1,6 @@
 ﻿namespace CiDotNet.Calc.Math
 {
+
     public class Finance
     {
         public enum Mode
